@@ -3,25 +3,19 @@
 @tailwind utilities;
 
 html {
-    @apply bg-primary-950
+    @apply bg-blue-950
 }
 
 body {
-    @apply p-8 text-white bg-primary-950 min-h-screen
+    @apply overflow-x-hidden
 }
 
 h1 {
-    @apply font-bold text-5xl
 }
 
 h2 {
-    @apply font-semibold text-4xl
+  @apply text-4xl font-bold
 }
 
 h3 {
-    @apply font-medium text-lg
-}
-
-::-webkit-calendar-picker-indicator{
-    filter: invert(1);
 }
