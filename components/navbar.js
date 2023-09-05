@@ -39,7 +39,7 @@ export default function NavBar() {
 
     return (
         <>
-          <nav className="flex sticky bg-primary-100 py-3 px-5 top-0 justify-between text-primary-950 font-sans z-40">
+          <nav className="flex absolute w-full bg-primary-100 py-3 px-5 top-0 justify-between text-primary-950 font-sans z-40">
             <h1 className="tracking-widest font-bold">
               Jake Morris
             </h1>
