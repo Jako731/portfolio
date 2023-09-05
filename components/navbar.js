@@ -26,6 +26,14 @@ export const BurgerIcon = () => {
     )
 }
 
+export const ExitIcon = () => {
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} className="w-6 h-6 text-primary-950">
+          <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    )
+}
+
 export default function NavBar() {
     const [open, setOpen] = useState(false)
 
@@ -61,12 +69,19 @@ export default function NavBar() {
             placement="right"
             open={open}
             onClose={setOpen}
-            className="p-4 md:hidden bg-primary-100 flex flex-col divide-y-[2px] divide-primary-950 font-semibold"
+            className="p-4 md:hidden bg-primary-100"
           >
+            <button className="absolute top-4 right-2" onClick={() => {
+                setOpen(false)
+            }}>
+              <ExitIcon />
+            </button>
+
+            <div className="flex flex-col divide-y-[2px] divide-primary-950 font-semibold">
               <h1 className="tracking-widest font-bold text-primary-950 text-center mb-5">
                 Jake Morris
               </h1>
-
+              
               {NAV_LINKS.map((link, i) => {
                   return (
                       <a
@@ -81,6 +96,7 @@ export default function NavBar() {
                       </a>
                   );
               })}
+            </div>
           </Drawer>
         </>
     )
