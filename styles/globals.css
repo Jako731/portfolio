@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 html {
-    @apply bg-primary-950
+    @apply bg-primary-950 scroll-smooth
 }
 
 body {
-    @apply overflow-x-hidden
+    @apply overflow-x-hidden text-white
 }
 
 h1 {
@@ -18,4 +18,5 @@ h2 {
 }
 
 h3 {
+  @apply text-3xl font-bold
 }

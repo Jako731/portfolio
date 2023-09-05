@@ -4,6 +4,7 @@ import { Drawer } from "@material-tailwind/react";
 const NAV_LINKS = [
     { name: "Home", href: "/" },
     { name: "About Me", href: "/#about" },
+    { name: "Experience", href: "/#experience" },
     { name: "Skills", href: "/#skills" },
     { name: "Real-Life Projects", href: "/#projects" },
     { name: "Contact", href: "/contact" },
