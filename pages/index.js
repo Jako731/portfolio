@@ -37,9 +37,9 @@ export default function HomePage() {
               </h2>
               <p className="text-center pt-3">
                 I'm an enthusiastic
-                <span className="font-bold text-gray-300"> junior developer </span>
+                <span className="font-bold text-amber-400"> junior developer </span>
                 based in Yorkshire with a solid background in software and web development using
-                <span className="font-bold text-gray-300"> agile methodologies</span>.
+                <span className="font-bold text-amber-400"> agile methodologies</span>.
                 My entrance into the tech realm began with a deep-seated drive to tackle challenges through coding, and I've been embarking on a thrilling path of perpetual growth ever since.
               </p>
             </div>

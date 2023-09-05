@@ -16,9 +16,9 @@ export default function InfoCard() {
             </h2>
             <p className="text-center pt-3">
         I'm an enthusiastic
-              <span className="font-bold text-blue-100"> junior developer </span>
+              <span className="font-bold text-accent-100"> junior developer </span>
               based in Yorkshire with a solid background in software and web development using
-              <span className="font-bold text-blue-100"> agile methodologies</span>.
+              <span className="font-bold text-accent-100"> agile methodologies</span>.
               My entrance into the tech realm began with a deep-seated drive to tackle challenges through coding, and I've been embarking on a thrilling path of perpetual growth ever since.
             </p>
           </div>
