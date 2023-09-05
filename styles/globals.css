@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    @apply bg-primary-950
+}
+
+body {
+    @apply p-8 text-white bg-primary-950 min-h-screen
+}
+
+h1 {
+    @apply font-bold text-5xl
+}
+
+h2 {
+    @apply font-semibold text-4xl
+}
+
+h3 {
+    @apply font-medium text-lg
+}
+
+::-webkit-calendar-picker-indicator{
+    filter: invert(1);
+}
