@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import { Drawer } from "@material-tailwind/react";
+
 const NAV_LINKS = [
     { name: "Home", href: "/#home" },
     { name: "About Me", href: "/#about" },
@@ -15,27 +18,70 @@ export const LinkedInIcon = () => {
     );
 }
 
-export default function NavBar() {
+export const BurgerIcon = () => {
     return (
-        <nav className="flex sticky bg-primary-100 py-3 px-5 top-0 justify-between text-primary-950 font-sans z-40">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    )
+}
+
+export default function NavBar() {
+    const [open, setOpen] = useState(false)
+
+    return (
+        <>
+          <nav className="flex sticky bg-primary-100 py-3 px-5 top-0 justify-between text-primary-950 font-sans z-40">
             <h1 className="tracking-widest font-bold">
-            Jake Morris
-          </h1>
-          <section className="flex divide-x-[2px] divide-black font-semibold">
-            {NAV_LINKS.map((link) => {
-                return (
-                    <a
-                      href={link.href}
-                      className="px-3 text-primary-950 hover:text-primary-800"
-                    >
-                      {link.name === "Linked In"
-                       ? <LinkedInIcon />
-                       : link.name
-                      }
-                    </a>
-                );
-            })}
-          </section>
-        </nav>
+              Jake Morris
+            </h1>
+            <section className="hidden md:flex divide-x-[2px] divide-primary-950 font-semibold">
+              {NAV_LINKS.map((link, i) => {
+                  return (
+                      <a
+                        key={i}
+                        href={link.href}
+                        className="px-3 text-primary-950 hover:text-primary-800"
+                      >
+                        {link.name === "Linked In"
+                         ? <LinkedInIcon />
+                         : link.name
+                        }
+                      </a>
+                  );
+              })}
+            </section>
+            <button className="block md:hidden" onClick={() => {
+                setOpen(true)
+            }}>
+              <BurgerIcon/>
+            </button>
+          </nav>
+          <Drawer
+            placement="right"
+            open={open}
+            onClose={setOpen}
+            className="p-4 md:hidden bg-primary-100 flex flex-col divide-y-[2px] divide-primary-950 font-semibold"
+          >
+              <h1 className="tracking-widest font-bold text-primary-950 text-center mb-5">
+                Jake Morris
+              </h1>
+
+              {NAV_LINKS.map((link, i) => {
+                  return (
+                      <a
+                        key={i}
+                        href={link.href}
+                        className="py-3 text-primary-950 hover:text-primary-800 text-right"
+                      >
+                        {link.name === "Linked In"
+                         ? <div className="flex justify-end"><LinkedInIcon /></div>
+                         : link.name
+                        }
+                      </a>
+                  );
+              })}
+          </Drawer>
+        </>
     )
 }
