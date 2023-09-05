@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Drawer } from "@material-tailwind/react";
 
 const NAV_LINKS = [
-    { name: "Home", href: "/#home" },
+    { name: "Home", href: "/" },
     { name: "About Me", href: "/#about" },
     { name: "Skills", href: "/#skills" },
     { name: "Real-Life Projects", href: "/#projects" },
@@ -88,6 +88,11 @@ export default function NavBar() {
                         key={i}
                         href={link.href}
                         className="py-3 text-primary-950 hover:text-primary-800 text-right"
+                        onClick={() => {
+                            if (link.name != "Contact") {
+                                setOpen(false)
+                            }
+                        }}
                       >
                         {link.name === "Linked In"
                          ? <div className="flex justify-end"><LinkedInIcon /></div>
