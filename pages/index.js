@@ -10,7 +10,7 @@ export const EftelingImg = () => {
         <img
           src="/images/efteling.jpg"
           alt="Me at Efteling"
-          className="h-full w-full object-cover"
+          className="h-[100vh] w-full object-cover"
         />
     );
 }
@@ -20,7 +20,7 @@ export const TuplipImg = () => {
         <img
             src="/images/tulip.jpg"
             alt="Me stood next to a big tuplip"
-            className="h-full w-full object-cover"
+            className="h-[100vh] w-full object-cover"
         />
     );
 }
@@ -30,7 +30,7 @@ export const CadetsImg = () => {
         <img
             src="/images/cadets.jpg"
             alt="Me winning an award with the Army Cadets"
-            className="h-full w-full object-cover"
+            className="h-[100vh] w-full object-cover"
         />
     );
 }
