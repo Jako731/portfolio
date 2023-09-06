@@ -42,7 +42,7 @@ export default function HomePage() {
 
         {/* IMAGE WELCOME */}
         <section>
-          <div className="hidden md:grid grid-cols-3 w-[100vw] h-full opacity-30">
+          <div className="hidden md:grid grid-cols-3 h-[100vh] xl:h-auto opacity-30">
             <EftelingImg />
             <TuplipImg />
             <CadetsImg />
@@ -77,32 +77,38 @@ export default function HomePage() {
           </div>
         </section>
         
-        <main className="p-6 w-full">
+        <main className="p-6 w-full divide-y-2 divide-primary-900 space-y-2">
           {/* ABOUT ME SECTION */}
-          <section id="about">
-            <h3 className="mt-5">
+          <section id="about" className="flex flex-col items-center">
+            <h3 className="mt-5 self-start">
               About Me!
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-5 items-center gap-x-5 order-last md:order-1 justify-center">
+            <div className="w-full xl:w-3/4 grid grid-cols-1 md:grid-cols-2 mt-5 items-center gap-5 justify-center">
               <p>
                 I am a 19 year old currently working in the tech industry as a junior software developer.
                 I have been programming since I was 13 and immediately loved the problem-solving aspect of it.
                 I wanted to use my programming skills in my career, so I decided, for A-Levels, to move to <a className="font-bold text-accent-400 hover:text-accent-500 underline" href="https://www.rondearingutc.com">Ron Dearing UTC</a> to expand on my knowledge and to set me up for the world of work.
                 I left Ron Dearing to join <a className="font-bold text-accent-400 hover:text-accent-500 underline" href="https://sauce.dev"> Sauce Consultants Ltd.</a> who specialise in working with large corporates as their digital partner, who make software, despoke to the company themselves.
               </p>
-              <div className="flex justify-center w-full">
+              <div className="flex flex-col space-y-4 items-center w-full">
                 <img
-                  src="/images/tulip.jpg"
-                  alt="Me stood next to a big tuplip"
+                  src="/images/sauce-start.png"
+                  alt="Me along with 3 other trainees joining Sauce"
                   className="w-1/2 object-cover aspect-square"
                 />
+                <a
+                  className="text-sm text-primary-200 text-center hover:text-primary-300 underline"
+                  href="https://www.thehullstory.com/allarticles/ron-dearing-utc-hull-destinations-2022"
+                >
+                  Image from The Hull Story talking about Sauce employing myself and others
+                </a>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 mt-5 items-center gap-x-5">
-              <div className="flex justify-center w-full">
+            <div className="w-full xl:w-3/4 grid grid-cols-1 md:grid-cols-2 mt-10 items-center gap-5 justify-center">
+              <div className="flex justify-center w-full order-last md:order-first">
                 <img
-                  src="/images/efteling.jpg"
-                  alt="Me stood next to a big tuplip"
+                  src="/images/bttwb.jpg"
+                  alt="Back to the Water Below vinyl"
                   className="w-1/2 object-cover aspect-square"
                 />
               </div>
@@ -112,16 +118,25 @@ export default function HomePage() {
             </div>
           </section>
 
-          <section id="experience">
+          <section id="experience" className="mt-5">
+            <h3 className="mt-5 self-start">
+              My Experience
+            </h3>
 
           </section>
 
           <section id="skills">
-            
+            <h3 className="mt-5 self-start">
+              What Skills Do I Have?
+            </h3>
+
           </section>
 
           <section id="projects">
-            
+            <h3 className="mt-5 self-start">
+              What Projects Have I Worked On?
+            </h3>
+
           </section>
         </main>
       </>

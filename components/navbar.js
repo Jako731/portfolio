@@ -40,11 +40,11 @@ export default function NavBar() {
 
     return (
         <>
-          <nav className="flex absolute w-full bg-primary-100 py-3 px-5 top-0 justify-between text-primary-950 font-sans z-40">
+          <nav className="flex sticky bg-primary-100 py-3 px-5 top-0 justify-between text-primary-950 font-sans z-40">
             <h1 className="tracking-widest font-bold">
               Jake Morris
             </h1>
-            <section className="hidden md:flex divide-x-[2px] divide-primary-950 font-semibold">
+            <section className="hidden lg:flex divide-x-[2px] divide-primary-950 font-semibold">
               {NAV_LINKS.map((link, i) => {
                   return (
                       <a
@@ -60,7 +60,7 @@ export default function NavBar() {
                   );
               })}
             </section>
-            <button className="block md:hidden" onClick={() => {
+            <button className="block lg:hidden" onClick={() => {
                 setOpen(true)
             }}>
               <BurgerIcon/>
@@ -70,7 +70,7 @@ export default function NavBar() {
             placement="right"
             open={open}
             onClose={setOpen}
-            className="p-4 md:hidden bg-primary-100"
+            className="p-4 lg:hidden bg-primary-100"
           >
             <button className="absolute top-4 right-2" onClick={() => {
                 setOpen(false)
