@@ -14,7 +14,7 @@ export default function CompanyInfoCard({ className, imageClass, children, title
             </h3>
             <p>{time}</p>
           </div>
-          <p className="p-3 text-justify">
+          <p className="p-3">
             {children}
           </p>
         </a>
