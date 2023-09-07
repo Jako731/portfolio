@@ -132,7 +132,7 @@ export default function HomePage() {
               Where have I been?
             </h2>
             
-            <div className="grid grid-cols-3 justify-items-center">
+            <div className="grid grid-cols-1 gap-y-4 lg:gap-y-0 lg:grid-cols-3 justify-items-center">
               <CompanyInfoCard
                 href="/experience#sauce"
                 className="hover:scale-110 transition-transform"
@@ -149,6 +149,7 @@ export default function HomePage() {
               <Timeline
                 top
                 date="September 2023"
+                className="hidden lg:flex"
               />
 
               <div/>
@@ -157,6 +158,7 @@ export default function HomePage() {
               <Timeline
                 date="April 2021"
                 position="right"
+                className="hidden lg:flex"
               />
 
               <CompanyInfoCard

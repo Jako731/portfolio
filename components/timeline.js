@@ -1,6 +1,6 @@
-export default function Timeline({ top, date, position = "left" }) {
+export default function Timeline({ top, date, position = "left", className }) {
     return (
-        <div className="h-full w-fit flex flex-col items-center">
+        <div className={`h-full w-fit flex flex-col items-center ${className}`}>
           {top && <p className="mb-5">Present Day</p>}
           <div className="w-2 h-20 bg-accent-400">
             {top && (

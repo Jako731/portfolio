@@ -8,7 +8,7 @@ export default function CompanyInfoCard({ className, imageClass, children, title
             src={imageUri}
             alt={`Thumbnail for experience with ${title}`}
           />
-          <div className="w-fit text-primary-100 bg-accent-500 rounded-br-lg text-xs py-2 pl-2 pr-10">
+          <div className="w-fit text-primary-100 bg-accent-400 rounded-br-lg text-xs py-2 pl-2 pr-10">
             <h3 className="text-base">
               {title}
             </h3>
