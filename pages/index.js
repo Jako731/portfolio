@@ -1,6 +1,8 @@
 import NavBar from "@/components/navbar";
 import InfoCard from "@/components/info-card";
 import { Carousel } from "@material-tailwind/react";
+import CompanyInfoCard from "@/components/company-info-card";
+import Timeline from '@/components/timeline'
 
 
 export const ROLE_TAG = "<developer>";
@@ -99,7 +101,7 @@ export default function HomePage() {
                 <img
                   src="/images/sauce-start.png"
                   alt="Me along with 3 other trainees joining Sauce"
-                  className="w-1/2 object-cover aspect-square rounded-lg"
+                  className="w-1/2 object-cover aspect-square rounded-lg hover:scale-110 transition-transform"
                 />
                 <a
                   className="text-sm text-primary-200 text-center hover:text-primary-300 underline"
@@ -114,7 +116,7 @@ export default function HomePage() {
                 <img
                   src="/images/bttwb.jpg"
                   alt="Back to the Water Below vinyl"
-                  className="w-1/2 object-cover aspect-square ml-5 rounded-lg"
+                  className="w-1/2 object-cover aspect-square ml-5 rounded-lg hover:scale-110 transition-transform"
                 />
               </div>
               <p className="text-justify">
@@ -123,11 +125,67 @@ export default function HomePage() {
             </div>
           </section>
 
-          <section id="experience" className="mt-5">
-            <h3 className="mt-5 self-start">
-              My Experience
-            </h3>
 
+          <section id="experience" className="flex flex-col mt-5 items-center pb-10">
+            <p className="mt-4 text-2xl"> {EXPERIENCE_TAG} </p>
+            <h2 className="text-5xl mb-8">
+              Where have I been?
+            </h2>
+            
+            <div className="grid grid-cols-3 justify-items-center">
+              <CompanyInfoCard
+                href="/experience#sauce"
+                className="hover:scale-110 transition-transform"
+                title="Sauce"
+                time="Apr 2022 - Sep 2023"
+                imageUri="https://wearesauce.io/wp-content/uploads/2022/10/Logo@2x.png"
+                imageClass="bg-black px-5 py-10"
+              >
+                I embarked on my journey at Sauce as an eager Intern Developer, driven by a passion for technology and a thirst for knowledge. Over the course of my tenure, I've grown both personally and professionally, steadily advancing to the role of Trainee Developer.
+                <br/>
+                During my time at Sauce, I've gained invaluable insights into the world of software development. I've honed my technical skills, delving into various programming languages and development tools.But more importantly, I've learned the importance of collaboration, adaptability, and continuous learning in the ever-evolving tech industry.
+              </CompanyInfoCard>
+
+              <Timeline
+                top
+                date="September 2023"
+              />
+
+              <div/>
+              <div />
+              
+              <Timeline
+                date="April 2021"
+                position="right"
+              />
+
+              <CompanyInfoCard
+                href="/experience#purple-door"
+                className="hover:scale-110 transition-transform"
+                title="The Purple Door"
+                time="Sep 2020 - Apr 2021"
+                imageUri="https://i2-prod.hulldailymail.co.uk/incoming/article2120912.ece/ALTERNATES/s615b/0_purple-door.jpg"
+                imageClass="opacity-70"
+              >
+                My first experience being a software developer was doing freelance work for The Purple Door,
+                which is a nightclub located in Hull.
+                <br/>
+                Whilst The Purple Door was in renovation during 2020,
+                I helped designed a table service system to enhance the efficiency of processes throughout
+                the nightclub. The client required my to develop a system where a customer sitting at a
+                table can press a button to request a wait to order items from the bar.
+              </CompanyInfoCard>
+
+              <div/>
+
+              <a
+                href="/experience"
+                className="px-5 py-3 bg-accent-400 rounded-lg"
+              >
+                View All
+              </a>
+
+            </div>
           </section>
 
           <section id="skills">
