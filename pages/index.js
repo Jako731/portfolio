@@ -2,7 +2,7 @@ import NavBar from "@/components/navbar";
 import InfoCard from "@/components/info-card";
 import { Carousel } from "@material-tailwind/react";
 import CompanyInfoCard from "@/components/company-info-card";
-import Timeline from '@/components/timeline'
+import Timeline from '@/components/timeline';
 
 
 export const ROLE_TAG = "<developer>";
