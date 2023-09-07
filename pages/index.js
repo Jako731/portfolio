@@ -1,9 +1,7 @@
 import NavBar from "@/components/navbar";
-import InfoCard from "@/components/info-card";
-import { Carousel } from "@material-tailwind/react";
+import { Carousel, Rating } from "@material-tailwind/react";
 import CompanyInfoCard from "@/components/company-info-card";
 import Timeline from '@/components/timeline';
-
 
 export const ROLE_TAG = "<developer>";
 export const ABOUT_TAG = "<about>";
@@ -125,14 +123,16 @@ export default function HomePage() {
             </div>
           </section>
 
-
+          {/* EXPERIENCE SECTION */}
           <section id="experience" className="flex flex-col mt-5 items-center pb-10">
             <p className="mt-4 text-2xl"> {EXPERIENCE_TAG} </p>
             <h2 className="text-5xl mb-8">
               Where have I been?
             </h2>
             
+            {/* TIMELINE */}
             <div className="grid grid-cols-1 gap-y-4 lg:gap-y-0 lg:grid-cols-3 justify-items-center">
+              {/* SAUCE */}
               <CompanyInfoCard
                 href="/experience#sauce"
                 className="hover:scale-110 transition-transform"
@@ -152,6 +152,7 @@ export default function HomePage() {
                 className="hidden lg:flex"
               />
 
+              {/* EMPTY DIVS ARE HERE FOR GRID POSITIONING */}
               <div/>
               <div />
               
@@ -161,6 +162,7 @@ export default function HomePage() {
                 className="hidden lg:flex"
               />
 
+              {/* PURPLE DOOR */}
               <CompanyInfoCard
                 href="/experience#purple-door"
                 className="hover:scale-110 transition-transform"
@@ -190,10 +192,53 @@ export default function HomePage() {
             </div>
           </section>
 
-          <section id="skills">
-            <h3 className="mt-5 self-start">
+          {/* SKILLS */}
+          <section id="skills" className="flex flex-col items-center mb-10">
+            <p className="mt-4 text-2xl"> {SKILLS_TAG} </p>
+            <h2 className="text-5xl">
               What Skills Do I Have?
-            </h3>
+            </h2>
+
+            <div className="grid grid-cols-2 w-full justify-items-center">
+              {/* TECHNOLOGIES */}
+              <div>
+                <h3>Languages I know</h3>
+                <ul className="border border-primary-50 p-3 rounded-lg my-3 flex flex-col space-y-3">
+                  <li className="flex justify-between max-w-sm items-center text-lg">
+                    <p>Javascript</p>
+                    <Rating className="cursor-default" unratedColor="primary-400" value={5} readonly />
+                  </li>
+
+                  <hr/>
+
+                  <li className="flex justify-between max-w-sm items-center text-lg">
+                    <p>Elixir</p>
+                    <Rating className="cursor-default" unratedColor="primary-400" value={4} readonly />
+                  </li>
+
+                  <hr />
+
+                  <li className="flex justify-between max-w-sm items-center text-lg">
+                    <p>C#</p>
+                    <Rating className="cursor-default" unratedColor="primary-400" value={2} readonly />
+                  </li>
+
+                  <hr />
+
+                  <li className="flex justify-between max-w-sm items-center text-lg">
+                    <p>Python</p>
+                    <Rating className="cursor-default" unratedColor="primary-400" value={3} readonly />
+                  </li>
+
+                </ul>
+                <h3>Frameworks I've dealt with</h3>
+              </div>
+
+              {/* GENERAL SKILLS */}
+              <div>
+                <h3>Other Skills</h3>
+              </div>
+            </div>
 
           </section>
 
