@@ -182,7 +182,7 @@ export default function HomePage() {
 
               <a
                 href="/experience"
-                className="px-5 py-3 bg-accent-400 rounded-lg"
+                className="px-5 py-3 bg-accent-400 rounded-lg mt-5 lg:mt-0 text-center w-full lg:w-fit"
               >
                 View All
               </a>
