@@ -201,93 +201,97 @@ export default function HomePage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 w-full justify-items-center">
               {/* TECHNOLOGIES */}
-              <div>
-                <h3>Languages I know</h3>
-                <ul className="border border-primary-50 p-3 rounded-lg my-3 flex flex-col space-y-3 mb-10">
-                  <li className="flex justify-between max-w-sm items-center text-lg">
-                    <p>HTML</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={5} readonly />
-                  </li>
-
-                  <hr />
-
-                  <li className="flex justify-between max-w-sm items-center text-lg">
-                    <p>CSS</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={4} readonly />
-                  </li>
-                  
-                  <hr />
-
-                  <li className="flex justify-between max-w-sm items-center text-lg">
-                    <p>Javascript</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={5} readonly />
-                  </li>
-
-                  <hr/>
-
-                  <li className="flex justify-between max-w-sm items-center text-lg">
-                    <p>Elixir</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={4} readonly />
-                  </li>
-
-                  <hr />
-
-                  <li className="flex justify-between max-w-sm items-center text-lg">
-                    <p>C#</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={3} readonly />
-                  </li>
-
-                  <hr />
-
-                  <li className="flex justify-between max-w-sm items-center text-lg">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-10">
+                <section>
+                  <h3>Languages I know</h3>
+                  <ul className="border border-primary-50 p-3 rounded-lg my-3 flex flex-col space-y-3">
+                    <li className="flex justify-between max-w-sm items-center text-lg">
+                      <p>HTML</p>
+                      <Rating className="cursor-default" ratedColor="orange" value={5} readonly />
+                    </li>
+                    
+                    <hr />
+                    
+                    <li className="flex justify-between max-w-sm items-center text-lg">
+                      <p>CSS</p>
+                      <Rating className="cursor-default" ratedColor="orange" value={4} readonly />
+                    </li>
+                    
+                    <hr />
+                    
+                    <li className="flex justify-between max-w-sm items-center text-lg">
+                      <p>Javascript</p>
+                      <Rating className="cursor-default" ratedColor="orange" value={5} readonly />
+                    </li>
+                    
+                    <hr/>
+                    
+                    <li className="flex justify-between max-w-sm items-center text-lg">
+                      <p>Elixir</p>
+                      <Rating className="cursor-default" ratedColor="orange" value={4} readonly />
+                    </li>
+                    
+                    <hr />
+                    
+                    <li className="flex justify-between max-w-sm items-center text-lg">
+                      <p>C#</p>
+                      <Rating className="cursor-default" ratedColor="orange" value={3} readonly />
+                    </li>
+                    
+                    <hr />
+                    
+                    <li className="flex justify-between max-w-sm items-center text-lg">
                     <p>Python</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={3} readonly />
-                  </li>
+                      <Rating className="cursor-default" ratedColor="orange" value={3} readonly />
+                    </li>
+                    
+                  </ul>
+                </section>
 
-                </ul>
-
-                <h3>Frameworks I've dealt with</h3>
-                <ul className="border border-primary-50 p-3 rounded-lg my-3 flex flex-col space-y-3 mb-3">
-                  <li className="flex justify-between max-w-sm items-center text-lg">
-                    <p>Ember JS</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={4} readonly />
-                  </li>
-
-                  <hr/>
-
-                  <li className="flex justify-between max-w-sm items-center text-lg">
-                    <p>React JS</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={4} readonly />
-                  </li>
-
-                  <hr />
-
-                  <li className="flex justify-between max-w-sm items-center text-lg">
-                    <p>Next JS</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={5} readonly />
-                  </li>
-
-                  <hr />
-
-                  <li className="flex justify-between max-w-sm items-center text-lg">
-                    <p>Tailwind CSS</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={5} readonly />
-                  </li>
-
-                  <hr />
-
-                  <li className="flex justify-between max-w-sm items-center text-lg">
-                    <p>Phoenix (Elixir Based)</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={3} readonly />
-                  </li>
-
-                  <hr />
-
-                  <li className="flex justify-between max-w-sm items-center text-lg">
-                    <p>React Native</p>
-                    <Rating className="cursor-default" ratedColor="orange" value={4} readonly />
-                  </li>
-                </ul>
+                <section>
+                  <h3>Frameworks I've dealt with</h3>
+                  <ul className="border border-primary-50 p-3 rounded-lg my-3 flex flex-col space-y-3 mb-3">
+                    <li className="flex justify-between max-w-sm items-center text-lg">
+                      <p>Ember JS</p>
+                      <Rating className="cursor-default" ratedColor="orange" value={4} readonly />
+                    </li>
+                    
+                    <hr/>
+                    
+                    <li className="flex justify-between max-w-sm items-center text-lg">
+                      <p>React JS</p>
+                      <Rating className="cursor-default" ratedColor="orange" value={4} readonly />
+                    </li>
+                    
+                    <hr />
+                    
+                    <li className="flex justify-between max-w-sm items-center text-lg">
+                      <p>Next JS</p>
+                  <Rating className="cursor-default" ratedColor="orange" value={5} readonly />
+                    </li>
+                    
+                    <hr />
+                    
+                    <li className="flex justify-between max-w-sm items-center text-lg">
+                      <p>Tailwind CSS</p>
+                      <Rating className="cursor-default" ratedColor="orange" value={5} readonly />
+                    </li>
+                    
+                    <hr />
+                    
+                    <li className="flex justify-between max-w-sm items-center text-lg">
+                      <p>Phoenix (Elixir Based)</p>
+                      <Rating className="cursor-default" ratedColor="orange" value={3} readonly />
+                    </li>
+                    
+                    <hr />
+                    
+                    <li className="flex justify-between max-w-sm items-center text-lg">
+                      <p>React Native</p>
+                      <Rating className="cursor-default" ratedColor="orange" value={4} readonly />
+                    </li>
+                  </ul>
+                </section>
 
               </div>
 
@@ -323,13 +327,20 @@ export default function HomePage() {
 
           </section>
 
-          <section id="projects">
-            <h3 className="mt-5 self-start">
+          {/* PROJECTS */}
+          <section id="projects" className="flex flex-col items-center mb-10">
+            <p className="mt-4 text-2xl"> {PROJECTS_TAG} </p>
+            <h2 className="text-5xl mb-10">
               What Projects Have I Worked On?
-            </h3>
-
+            </h2>
           </section>
+
+          <hr/>
         </main>
+
+        <footer className="text-center text-gray-300 text-uppercase py-5">
+          <a href="#">Back to top ↑</a>
+        </footer>
       </>
   );
 }

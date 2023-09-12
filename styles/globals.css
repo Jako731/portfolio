@@ -18,5 +18,5 @@ h2 {
 }
 
 h3 {
-  @apply text-3xl font-bold
+  @apply text-2xl lg:text-3xl font-bold
 }
