@@ -199,11 +199,11 @@ export default function HomePage() {
               What Skills Do I Have?
             </h2>
 
-            <div className="grid grid-cols-2 w-full justify-items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 w-full justify-items-center">
               {/* TECHNOLOGIES */}
               <div>
                 <h3>Languages I know</h3>
-                <ul className="border border-primary-50 p-3 rounded-lg my-3 flex flex-col space-y-3">
+                <ul className="border border-primary-50 p-3 rounded-lg my-3 flex flex-col space-y-3 mb-10">
                   <li className="flex justify-between max-w-sm items-center text-lg">
                     <p>Javascript</p>
                     <Rating className="cursor-default" unratedColor="primary-400" value={5} readonly />
@@ -220,7 +220,7 @@ export default function HomePage() {
 
                   <li className="flex justify-between max-w-sm items-center text-lg">
                     <p>C#</p>
-                    <Rating className="cursor-default" unratedColor="primary-400" value={2} readonly />
+                    <Rating className="cursor-default" unratedColor="primary-400" value={3} readonly />
                   </li>
 
                   <hr />
@@ -231,7 +231,43 @@ export default function HomePage() {
                   </li>
 
                 </ul>
+
                 <h3>Frameworks I've dealt with</h3>
+                <ul className="border border-primary-50 p-3 rounded-lg my-3 flex flex-col space-y-3 mb-3">
+                <li className="flex justify-between max-w-sm items-center text-lg">
+                    <p>Ember JS</p>
+                    <Rating className="cursor-default" unratedColor="primary-400" value={4} readonly />
+                  </li>
+
+                  <hr/>
+
+                  <li className="flex justify-between max-w-sm items-center text-lg">
+                    <p>React JS</p>
+                    <Rating className="cursor-default" unratedColor="primary-400" value={4} readonly />
+                  </li>
+
+                  <hr />
+
+                  <li className="flex justify-between max-w-sm items-center text-lg">
+                    <p>Next JS</p>
+                    <Rating className="cursor-default" unratedColor="primary-400" value={5} readonly />
+                  </li>
+
+                  <hr />
+
+                  <li className="flex justify-between max-w-sm items-center text-lg">
+                    <p>Phoenix (Elixir Based)</p>
+                    <Rating className="cursor-default" unratedColor="primary-400" value={3} readonly />
+                  </li>
+
+                  <hr />
+
+                  <li className="flex justify-between max-w-sm items-center text-lg">
+                    <p>React Native</p>
+                    <Rating className="cursor-default" unratedColor="primary-400" value={4} readonly />
+                  </li>
+                </ul>
+
               </div>
 
               {/* GENERAL SKILLS */}
