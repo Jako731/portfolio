@@ -133,6 +133,34 @@ export default function HomePage() {
             
             {/* TIMELINE */}
             <div className="grid grid-cols-1 gap-y-4 xl:gap-y-0 xl:grid-cols-3 justify-items-center">
+              {/* GVS */}
+              <CompanyInfoCard
+                href="/experience#gvs"
+                className="hover:scale-110 transition-transform"
+                title="Global View Systems"
+                time="Oct 2023 - Present"
+                imageUri="https://pbs.twimg.com/media/E65z9V1WUAApFiB.jpg"
+                imageClass=""
+              >
+              </CompanyInfoCard>
+
+              <Timeline
+                top
+                date="September 2023"
+                position="left"
+                className="hidden xl:flex"
+              />
+
+              {/* EMPTY DIV FOR GRID POSITIONING */}
+              <div/>
+              <div/>
+
+              <Timeline
+                date="September 2023"
+                position="right"
+                className="hidden xl:flex"
+              />
+
               {/* SAUCE */}
               <CompanyInfoCard
                 href="/experience#sauce"
@@ -146,22 +174,6 @@ export default function HomePage() {
                 <br/>
                 During my time at Sauce, I've gained invaluable insights into the world of software development. I've honed my technical skills, delving into various programming languages and development tools.But more importantly, I've learned the importance of collaboration, adaptability, and continuous learning in the ever-evolving tech industry.
               </CompanyInfoCard>
-
-              <Timeline
-                top
-                date="September 2023"
-                className="hidden xl:flex"
-              />
-
-              {/* EMPTY DIVS ARE HERE FOR GRID POSITIONING */}
-              <div/>
-              <div />
-              
-              <Timeline
-                date="April 2021"
-                position="right"
-                className="hidden xl:flex"
-              />
 
               {/* PURPLE DOOR */}
               <CompanyInfoCard
@@ -181,6 +193,14 @@ export default function HomePage() {
                 table can press a button to request a wait to order items from the bar.
               </CompanyInfoCard>
 
+              <Timeline
+                date="April 2021"
+                position="left"
+                className="hidden xl:flex"
+              />
+
+              {/* EMPTY DIV FOR GRID POSITIONING */}
+              <div/>
               <div/>
 
               <a
