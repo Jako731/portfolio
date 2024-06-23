@@ -14,7 +14,7 @@ export default function Projects() {
         <ProjectInfoCard
           title="MyAudit"
           imageUri="https://wbp.managemyaccountonline.net/res/org0011/j4bc2f6897114472.png"
-          imageClass="bg-white"
+          imageClass="bg-white p-4"
         >
           This is just some test
         </ProjectInfoCard>
@@ -36,7 +36,7 @@ export default function Projects() {
         <ProjectInfoCard
           title="Rubicon Bridge"
           imageUri="https://rubicon-bridge.com/wp-content/uploads/2023/02/Rubicon-bridge-logo-1x.png"
-          imageClass="bg-black p-5"
+          imageClass="bg-black"
         >
           This is just some test
         </ProjectInfoCard>
