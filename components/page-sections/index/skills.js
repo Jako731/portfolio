@@ -65,10 +65,10 @@ export default function Skills() {
                     <section>
                         <h3>Frameworks I've dealt with</h3>
                         <div className="flex space-x-2 justify-center w-full mt-2">
-                            <button onClick={() => setSelectedSkill("js")} className="px-2 py-1 bg-accent-500 rounded-full w-full">Javascript</button>
-                            <button onClick={() => setSelectedSkill("cs")} className="px-2 py-1 bg-accent-500 rounded-full w-full">C#</button>
-                            <button onClick={() => setSelectedSkill("css")} className="px-2 py-1 bg-accent-500 rounded-full w-full">CSS</button>
-                            <button onClick={() => setSelectedSkill("elixir")} className="px-2 py-1 bg-accent-500 rounded-full w-full">Elixir</button>
+                            <button onClick={() => setSelectedSkill("js")} className={`px-2 py-1 ${selectedSkill == "js" ? "bg-accent-500" : " bg-accent-400"} rounded-full w-full`}>Javascript</button>
+                            <button onClick={() => setSelectedSkill("cs")} className={`px-2 py-1 ${selectedSkill == "cs" ? "bg-accent-500" : " bg-accent-400"} rounded-full w-full`}>C#</button>
+                            <button onClick={() => setSelectedSkill("css")} className={`px-2 py-1 ${selectedSkill == "css" ? "bg-accent-500" : " bg-accent-400"} rounded-full w-full`}>CSS</button>
+                            <button onClick={() => setSelectedSkill("elixir")} className={`px-2 py-1 ${selectedSkill == "elixir" ? "bg-accent-500" : " bg-accent-400"} rounded-full w-full`}>Elixir</button>
                         </div>
                         <ul className="border border-primary-50 p-3 rounded-lg my-3 flex flex-col space-y-3 mb-3">
                             {selectedSkill == "js" ? (
