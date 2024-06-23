@@ -19,7 +19,7 @@ export default function HomePage() {
           <hr/>
         </main>
 
-        <footer className="text-center text-gray-300 text-uppercase py-5">
+        <footer className="text-center text-gray-300 opacity-50 text-uppercase py-5">
           <a href="#">Back to top ↑</a>
         </footer>
       </>
