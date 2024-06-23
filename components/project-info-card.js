@@ -1,10 +1,10 @@
-export default function ProjectInfoCard({ className = "", imageClass = "", children, title, imageUri, href }) {
+export default function ProjectInfoCard({ className = "", imageClass = "", children, title, imageUri, href, objectFit = "cover" }) {
     return (
         <a
             href={href}
             className={`max-w-md bg-gray-200 text-primary-950 rounded-lg h-fit border-4 border-gray-400 relative ${className}`}>
             <img
-                className={`w-full h-48 object-cover rounded-t-lg border-b-8 border-accent-400 ${imageClass}`}
+                className={`w-full h-48 object-${objectFit} rounded-t-lg border-b-8 border-accent-400 ${imageClass}`}
                 src={imageUri}
                 alt={`Thumbnail for experience with ${title}`}
             />
