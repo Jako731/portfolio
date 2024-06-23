@@ -8,7 +8,7 @@ export default function ProjectInfoCard({ className = "", imageClass = "", child
                 src={imageUri}
                 alt={`Thumbnail for experience with ${title}`}
             />
-            <div className="bg-gray-100 w-fit text-primary-950 text-center border-4 border-accent-400 absolute left-1/2 transform -translate-x-1/2 -translate-y-7 d text-xs rounded-xl p-2">
+            <div className="bg-gray-100 w-max text-primary-950 text-center border-4 border-accent-400 absolute left-1/2 transform -translate-x-1/2 -translate-y-7 d text-xs rounded-xl p-2">
                 <h3 className="text-base">
                     {title}
                 </h3>
