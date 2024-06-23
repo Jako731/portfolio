@@ -12,9 +12,18 @@ export default function Projects() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
         <ProjectInfoCard
+          title="MyPorter"
+          imageUri="https://pbs.twimg.com/profile_images/1484123522582683655/xCnQ6uhz_400x400.jpg"
+          imageClass="bg-white"
+        >
+          This is just some test
+        </ProjectInfoCard>
+
+        <ProjectInfoCard
           title="MyAudit"
           imageUri="https://wbp.managemyaccountonline.net/res/org0011/j4bc2f6897114472.png"
           imageClass="bg-white p-4"
+          objectFit="contain"
         >
           This is just some test
         </ProjectInfoCard>
@@ -33,13 +42,14 @@ export default function Projects() {
           This is just some test
         </ProjectInfoCard>
 
-        <ProjectInfoCard
+        {/* <ProjectInfoCard
           title="Rubicon Bridge"
           imageUri="https://rubicon-bridge.com/wp-content/uploads/2023/02/Rubicon-bridge-logo-1x.png"
-          imageClass="bg-black"
+          imageClass="bg-black p-5"
+          objectFit="contain"
         >
           This is just some test
-        </ProjectInfoCard>
+        </ProjectInfoCard> */}
 
         <ProjectInfoCard
           title="Freedom Festival"
