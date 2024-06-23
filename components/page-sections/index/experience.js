@@ -62,7 +62,7 @@ export default function Experience() {
                 title="The Purple Door"
                 time="Sep 2020 - Apr 2021"
                 imageUri="https://i2-prod.hulldailymail.co.uk/incoming/article2120912.ece/ALTERNATES/s615b/0_purple-door.jpg"
-                imageClass="opacity-70"
+                imageClass=""
               >
                 My first experience being a software developer was doing freelance work for The Purple Door,
                 which is a nightclub located in Hull.
