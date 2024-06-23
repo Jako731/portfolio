@@ -36,7 +36,7 @@ export default function Experience() {
               <div/>
 
               <Timeline
-                date="September 2023"
+                date="April 2022"
                 position="right"
                 className="hidden xl:flex"
               />
@@ -46,7 +46,7 @@ export default function Experience() {
                 href="/experience#sauce"
                 className="hover:scale-110 transition-transform"
                 title="Sauce"
-                time="Apr 2022 - Sep 2023"
+                time="Apr 2022 - Oct 2023"
                 imageUri="https://wearesauce.io/wp-content/uploads/2022/10/Logo@2x.png"
                 imageClass="bg-black px-5 py-10"
               >
@@ -74,7 +74,7 @@ export default function Experience() {
               </CompanyInfoCard>
 
               <Timeline
-                date="April 2021"
+                date="Sep 2020"
                 position="left"
                 className="hidden xl:flex"
               />
