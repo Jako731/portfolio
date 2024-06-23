@@ -1,4 +1,4 @@
-export default function ProjectInfoCard({ className, imageClass, children, title, imageUri, href }) {
+export default function ProjectInfoCard({ className = "", imageClass = "", children, title, imageUri, href }) {
     return (
         <a
             href={href}

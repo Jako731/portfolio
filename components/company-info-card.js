@@ -1,4 +1,4 @@
-export default function CompanyInfoCard({ className, imageClass, children, title, time, imageUri, href }) {
+export default function CompanyInfoCard({ className = "", imageClass = "", children, title, time, imageUri, href }) {
     return (
         <a
           href={href}
